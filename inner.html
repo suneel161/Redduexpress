@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="css/reddyMobile.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+ <link rel="stylesheet" href="http://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css">
+<!--<script src="http://rawgithub.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+ <script id="mobile-datepicker" src="http://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js">-->
+ <script src="js/jquery.ui.datepicker.js"></script>
+ <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js">
+ </script>
+ 
+ <script>
+$(document).ready(function(){
+	$("#searchBusBtn").click(function(){
+		
+		
+			//alert("button clicked");
+		//	$.mobile.changePage("home2.html","slideup");
+			
+		//e.preventDefault();
+		window.location.href="inner.html";
+		
+		
+	});
+	$("#homeBtn").click(function(){
+	window.location.href="index.html";
+	});
+	
+	
+	
+});	
+ </script>
+</head>
+<body>
+<form>
+   
+
+<div data-role="page" id="pageone">
+  <div class="reddy-header" data-role="header" data-theme="a">
+    <img src="img/reddyLogo.png" width="30%" alt="" class="logo"/>
+    <div style="float:right !important;">
+      <img src="img/icons/homeIcon.png"  style="float:right !important; width:30px !important" border="0" id="homeBtn" /><br />
+      <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+  </div>
+  </div>
+<div data-role="header" data-theme="b"  class="ui-content">
+Hyderabad to Visakhapatnam on 26-07-2014
+</div>
+  <div data-role="main" class="ui-content">
+ <table width="100%" class="ui-responsive table-stripe" id="movie-table" data-role="table" data-mode="reflow">
+  <thead>
+    <tr>
+      <th align="left" data-priority="persist">Travel Operator</th>
+      <th align="left" data-priority="3"><abbr title="Rotten Tomato Rating">Timing</abbr></th>
+      <th align="left" data-priority="4">Seats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reddy Express<br>
+        <span class="text1">Multi Axle Volvo - AC Semi Sleeper </span><br></td>
+      <td>5:00 PM - 6:00 AM</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Kaveri Travels<br>
+        <span class="text1">Hi-Tech Non Ac</span></td>
+      <td>5:30 PM - 6:30 AM</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Kesineni Tours & Travels<br>
+        <span class="text1">VOLVO-B9R (MULTI AXLE-SEMISLEEPER)</span></td>
+      <td>5:40 PM - 6:00 AM</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>Navin Travels<br>
+        <span class="text1">2+2, Multi Axle SemiSleeper, AC, LCD</span></td>
+      <td>5:55 PM - 6:20 AM</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>SVR Tours & Travels-Apple I Bus<br>
+        <span class="text1">Hi-Tech Non Ac</span></td>
+      <td>6:00 PM - 6:30 AM</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Meghana Travels<br>
+        <span class="text1">2+2, Semi Sleeper, Non-AC, LCD </span></td>
+      <td>6:00 PM - 7:00 AM</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sree Kaleswari Travels<br>
+        <span class="text1">AC Sleeper</span></td>
+      <td>8:30 PM - 7:30 AM</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Transit Bus<br>
+        <span class="text1">1+1, Sleeper, AC, LED</span></td>
+      <td>8:40 PM - 7:30 AM</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HKB Tours<br>
+        <span class="text1">2+2, Multi Axle Volvo SemiSleeper, AC, Video</span></td>
+      <td>8:45 PM - 7:45 AM</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="title">Gowthami Travels<br>
+        <span class="text1">1+1, Sleeper, AC, LCD</span></td>
+      <td>10:00 PM - 8:30 AM</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+  
+</div> 
+</form>
+
+</body>
+</html>

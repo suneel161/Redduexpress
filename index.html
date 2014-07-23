@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="css/reddyMobile.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+ <link rel="stylesheet" href="http://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css">
+<!--<script src="http://rawgithub.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+ <script id="mobile-datepicker" src="http://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js">-->
+ <script src="js/jquery.ui.datepicker.js"></script>
+ <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js">
+ </script>
+ 
+ <script>
+$(document).ready(function(){
+	$("#searchBusBtn").click(function(){
+		
+		
+			//alert("button clicked");
+		//	$.mobile.changePage("home2.html","slideup");
+			
+		//e.preventDefault();
+		window.location.href="inner.html";
+		
+		
+	});
+	$("#homeBtn").click(function(){
+	window.location.href="index.html";
+	});
+	
+	
+	
+});	
+ </script>
+</head>
+<body>
+<form>
+   
+
+<div data-role="page" id="pageone">
+  <div class="reddy-header" data-role="header" data-theme="a">
+    <img src="img/reddyLogo.png" width="30%" alt="" class="logo"/>
+      <img src="img/icons/homeIcon.png"  style="float:right !important; width:30px !important; cursor:pointer" border="0" id="homeBtn" />
+  
+  </div>
+
+  <div data-role="main" class="ui-content">
+ <!--   <label for="flip-checkbox-1">Flip toggle switch checkbox:</label>
+    <input data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1" type="checkbox">-->
+    
+     <label for="fromLoc">From </label>
+     <input name="fromLoc" id="fromLoc" value="" type="text"  placeholder="Touch Enter from location" required="true" >
+     <label for="toLoc">To</label>
+     <input  name="toLoc" id="toLoc" value="" type="text" placeholder="Touch Enter to location" required="true" >
+     <div data-demo-html="true">
+     <label for="jDate">Journey Date</label>
+            <input type="text" data-role="date" required="true" id="jDate" >
+        </div>
+     
+     <br />
+     <button class="ui-btn ui-btn-b"  id="searchBusBtn" >Search</button>
+
+  </div>
+
+  
+</div> 
+</form>
+<div data-role="page" id="pagetwo" data-dialog="true">
+  <div class="reddy-header" data-role="header" data-theme="a">
+    <img src="img/reddyLogo.png" width="30%" alt=""/>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Insert Content Here</p>
+  </div>
+
+
+</div>
+</body>
+</html>
